@@ -1,6 +1,6 @@
 # Service Bus - namespace
 resource "azurerm_servicebus_namespace" "sbus" {
-  name                = "${var.project}-${var.environment}-sbns"
+  name                = "${var.project}-${var.environment}-test-demo"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   
