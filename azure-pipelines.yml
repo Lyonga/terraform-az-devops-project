@@ -6,10 +6,13 @@
 parameters:
 - name: rootFolder
   type: string
+  default: './terraform'
 - name: tfvarsFile
   type: string
+  default: 'tfdemo.env01.tfvars'
 - name: adoEnvironment
   type: string
+  default: 'env01'
   
 variables:
 - group: TerraformCredentials
