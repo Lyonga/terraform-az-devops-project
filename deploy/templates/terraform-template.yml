@@ -5,6 +5,8 @@ parameters:
   type: string
 - name: adoEnvironment
   type: string
+- variables:
+  group: TerraformCredentials
 
 stages:
 - stage: 'Terraform_Plan'
