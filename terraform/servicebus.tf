@@ -19,7 +19,7 @@ resource "azurerm_servicebus_namespace" "sbus" {
 
 # Service Bus - queue01
 resource "azurerm_servicebus_queue" "queue01" {
-  name         = "rmq-testqueue01"
+  name         = "rabbitmq-shovel-queue-demo"
   namespace_id = azurerm_servicebus_namespace.sbus.id
 
   default_message_ttl                     = "P14D"
